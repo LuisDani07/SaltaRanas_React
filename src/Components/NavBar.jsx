@@ -5,11 +5,11 @@ function NavBar() {
     <header>
         <a href="#" className='logo'>SaltaRanas</a>
         <ul className='nav'>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Games</a></li>
-            <li><a href="#">Tournament</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Juegos</a></li>
+            <li><a href="#">Torneos</a></li>
+            <li><a href="#">Contacto</a></li>
         </ul>
         <div className='action'>
             <div className="searchBx">
