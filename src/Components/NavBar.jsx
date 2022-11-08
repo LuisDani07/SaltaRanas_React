@@ -13,7 +13,7 @@ function NavBar() {
         </ul>
         <div className='action'>
             <div className="searchBx">
-                <a href="#"><i class='bx bx-search-alt-2' ></i></a>
+                <a href="#"><i className='bx bx-search-alt-2' ></i></a>
                 <input type="text" placeholder='search games'/>
             </div>
         </div>
