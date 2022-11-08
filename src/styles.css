@@ -21,6 +21,19 @@ header{
     transition:0.5s;
     z-index:1000;
 }
+/* scroll bar */
+::-webkit-scrollbar{
+    width:12px;
+}
+::-webkit-scrollbar-thumb{
+background:#1aeeef;
+border-radius: 6px;
+}
+header .sticky{
+    background: #1b2141;
+    box-shadow: 0 5px 10px  rgba(0,0,0,0.1);
+}
+
 header .logo{
     position:relative;
     color:#fff;
@@ -118,4 +131,48 @@ align-items: center;
 }
 .banner .bg img{
     width:600px;
+}
+/* about */
+.about{
+    position:relative;
+    width:100%;
+    min-width: 75vh;
+    padding:0 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .contentBx{
+    width: 50%;
+    margin:20px;
+}
+.about .contentBx h2{
+    font-size: 3em;
+    font-weight: 700;
+    color:#fff;
+}
+.about .contentBx p{
+    max-width: 600px;
+    text-align: justify;
+    color:#dbd9d9
+}
+.about .contentBx a{
+    display:inline-block;
+    padding:10px 20px;
+    border:1px solid #1aeeef;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.about .contentBx a:hover{
+    background:#1aeeef;
+    border:none;
+    color:#050e2d;
+    box-shadow: 0 0 10px #1aeeef;
+}
+.historia{
+    text-align: justify;
+    color:#dbd9d9
 }

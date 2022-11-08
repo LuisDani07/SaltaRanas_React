@@ -1,8 +1,10 @@
 import React from 'react'
 
+
+
 function NavBar() {
   return (
-    <header>
+    <header className='sticky'>
         <a href="#" className='logo'>SaltaRanas</a>
         <ul className='nav'>
             <li><a href="#">Inicio</a></li>
