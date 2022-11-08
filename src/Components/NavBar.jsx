@@ -8,9 +8,9 @@ function NavBar() {
         <a href="#" className='logo'>SaltaRanas</a>
         <ul className='nav'>
             <li><a href="#">Inicio</a></li>
+            <li><a href="#">Historia</a></li>
+            <li><a href="#">Como jugar</a></li>
             <li><a href="#">sobre nosotros</a></li>
-            <li><a href="#">historia</a></li>
-            <li><a href="#">como jugar</a></li>
             <li><a href="#">Contacto</a></li>
         </ul>
         <div className='action'>
