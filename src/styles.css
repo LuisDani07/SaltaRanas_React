@@ -21,3 +21,10 @@ header{
     transition:0.5s;
     z-index:1000;
 }
+header .logo{
+    position:relative;
+    color:#fff;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
