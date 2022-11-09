@@ -2,7 +2,7 @@
 
 function Banner() {
   return (
-    <article className="banner">
+    <article className="banner animeX">
             <div className="bg">
                 <div className="content">
                     <h2>Una nueva casa para <br />

@@ -23,7 +23,6 @@ header{
 #root .sticky{
     background: #1b2141;
     box-shadow: 0 5px 10px   rgba(0,0,0,0.1);
-    
 }
 /* scroll bar */
 ::-webkit-scrollbar{
