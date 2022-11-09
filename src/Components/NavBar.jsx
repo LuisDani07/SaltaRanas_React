@@ -1,10 +1,16 @@
 import React from 'react'
 
-
+// responsive navbar
+function toggleMenu(){
+  const toggleMenu=document.querySelector('.toggleMenu');
+  const nav=document.querySelector('.nav');
+  toggleMenu.classList.toggle('active');
+  nav.classList.toggle('active');
+}
 
 function NavBar() {
   return (
-    <header id='inicio1'>
+    <header id='inicio1' className='animeX'>
         <a href="#" className='logo'>SaltaRanas</a>
         <ul className='nav'>
             <li><a href="#inicio1">Inicio</a></li>
@@ -19,7 +25,7 @@ function NavBar() {
                 <input type="text" placeholder='buscar juegos'/>
             </div>
         </div>
-        <div className="toggleMenu"></div>
+        <div className="toggleMenu" onClick={toggleMenu}></div>
     </header>
   )
 }

@@ -2,8 +2,8 @@
 
 function Contacto() {
   return (
-    <footer id="contacto1">
-        <div className="contact">
+    <footer id="contacto1" className="animeX">
+        <div className="contact ">
            <img src="/lago.jpg" alt="" />
            <div className="form">
                   <h1>Contactanos</h1>
