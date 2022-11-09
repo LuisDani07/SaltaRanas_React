@@ -13,13 +13,17 @@ header{
     top:0;
     left:0;
     width:100%;
-    padding:7px 80px;
+    padding:7px 100px;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background: #1b2141;
     transition:0.5s;
     z-index:1000;
+}
+#root .sticky{
+    background: #1b2141;
+    box-shadow: 0 5px 10px   rgba(0,0,0,0.1);
+    
 }
 /* scroll bar */
 ::-webkit-scrollbar{
@@ -29,10 +33,7 @@ header{
 background:#1aeeef;
 border-radius: 6px;
 }
-header .sticky{
-    background: #1b2141;
-    box-shadow: 0 5px 10px  rgba(0,0,0,0.1);
-}
+
 
 header .logo{
     position:relative;
@@ -258,4 +259,5 @@ margin:10px 0;
     border: none;
     color:#050e2d;
     box-shadow: 0 0 10px #1aeeef;
+    cursor:pointer;
 }

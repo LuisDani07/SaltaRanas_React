@@ -4,7 +4,7 @@ import React from 'react'
 
 function NavBar() {
   return (
-    <header className='sticky'>
+    <header >
         <a href="#" className='logo'>SaltaRanas</a>
         <ul className='nav'>
             <li><a href="#">Inicio</a></li>

@@ -2,7 +2,8 @@
 
 function Contacto() {
   return (
-    <footer className="contact">
+    <footer>
+        <div className="contact">
            <img src="/lago.jpg" alt="" />
            <div className="form">
                   <h1>Contactanos</h1>
@@ -22,6 +23,18 @@ function Contacto() {
                        <input type="submit" name="Submit"/>
                  </div>
            </div>
+      </div>
+           <div className="info">
+                <a href="#" className="logo">TepicGames</a>
+                <p><i className="bx bx-copyright"></i>2022 Todos lo derechos reservados</p>
+                <ul>
+                    <li><a href="#"><i className="bx bxl-facebook"></i></a></li>
+                    <li><a href="#"><i className="bx bxl-instagram"></i></a></li>
+                    <li><a href="#"><i className="bx bxl-twitter"></i></a></li>
+                    <li><a href="#"><i className="bx bxl-youtube"></i></a></li>
+                </ul>
+           </div>
+
     </footer>
   )
 }
