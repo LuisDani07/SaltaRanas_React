@@ -2,7 +2,7 @@
 
 function Intrucciones() {
   return (
-    <section class="instrucciones">
+    <section class="instrucciones" id="jugar1">
            <div class="lista">
                     <li>paso 1</li>
                     <li>paso 2</li>

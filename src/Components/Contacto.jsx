@@ -2,7 +2,7 @@
 
 function Contacto() {
   return (
-    <footer>
+    <footer id="contacto1">
         <div className="contact">
            <img src="/lago.jpg" alt="" />
            <div className="form">
@@ -24,7 +24,8 @@ function Contacto() {
                  </div>
            </div>
       </div>
-           <div className="info">
+      <div className="footer">
+            <div className="info">
                 <a href="#" className="logo">TepicGames</a>
                 <p><i className="bx bx-copyright"></i>2022 Todos lo derechos reservados</p>
                 <ul>
@@ -33,7 +34,8 @@ function Contacto() {
                     <li><a href="#"><i className="bx bxl-twitter"></i></a></li>
                     <li><a href="#"><i className="bx bxl-youtube"></i></a></li>
                 </ul>
-           </div>
+          </div>
+      </div>
 
     </footer>
   )

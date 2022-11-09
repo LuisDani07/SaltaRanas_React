@@ -4,14 +4,14 @@ import React from 'react'
 
 function NavBar() {
   return (
-    <header >
+    <header id='inicio1'>
         <a href="#" className='logo'>SaltaRanas</a>
         <ul className='nav'>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Historia</a></li>
-            <li><a href="#">Como jugar</a></li>
-            <li><a href="#">sobre nosotros</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#inicio1">Inicio</a></li>
+            <li><a href="#historia1">Historia</a></li>
+            <li><a href="#jugar1">Como jugar</a></li>
+            <li><a href="#nosotros1">sobre nosotros</a></li>
+            <li><a href="#contacto1">Contacto</a></li>
         </ul>
         <div className='action'>
             <div className="searchBx">
