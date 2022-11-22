@@ -89,6 +89,7 @@ header .action .searchBx input{
     display:flex;
     justify-content: center;
     align-items: center;
+    margin-top: 75px;
 
 }
 .banner .bg{
