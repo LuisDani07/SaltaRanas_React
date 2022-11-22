@@ -10,7 +10,7 @@ function toggleMenu(){
 
 function NavBar() {
   return (
-    <header id='inicio1' >
+    <header  >
         <a href="#" className='logo'>SaltaRanas</a>
         <ul className='nav'>
             <li><a href="#inicio1">Inicio</a></li>

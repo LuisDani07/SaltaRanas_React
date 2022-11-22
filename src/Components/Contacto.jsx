@@ -1,5 +1,4 @@
 
-
 function Contacto() {
   return (
     <footer id="contacto1" className="animeX">
@@ -9,7 +8,7 @@ function Contacto() {
                   <h1>Contactanos</h1>
                   <div className="inputBx">
                        <p>Ingresa tu nombre</p>
-                       <input type="text" placeholder="Nombre completo" />
+                       <input type="text" placeholder="Nombre completo"  />
                  </div>
                  <div className="inputBx">
                        <p>Ingresa tu correo</p>
@@ -20,7 +19,7 @@ function Contacto() {
                        <textarea placeholder="Escribe aquí..." ></textarea>
                  </div>
                  <div className="inputBx">
-                       <input type="submit" name="Submit"/>
+                       <input type="submit"  name="Submit"/>
                  </div>
            </div>
       </div>

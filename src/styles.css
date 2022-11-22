@@ -172,10 +172,15 @@ align-items: center;
     color:#050e2d;
     box-shadow: 0 0 10px #1aeeef;
 }
+.about img{
+    height:500px;
+    background: cover;
+
+}
 .historia{
     position:relative;
     width:100%;
-    min-height: 60vh;
+    min-height: 100vh;
     padding:0px 100px;
     display:flex;
    
