@@ -322,6 +322,12 @@ footer .footer .info ul li:hover a i{
     transform: translateY(0px);
     opacity:1;
 }
+
+
+header .logo img{
+    height:50px;
+    border-radius: 10px;
+}
 /* responsive */
 @media(max-width: 991px){
     header{

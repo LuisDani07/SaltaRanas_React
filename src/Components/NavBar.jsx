@@ -11,7 +11,7 @@ function toggleMenu(){
 function NavBar() {
   return (
     <header  >
-        <a href="#" className='logo'>SaltaRanas</a>
+        <a href="#" className='logo'><img src='/logo.PNG'></img></a>
         <ul className='nav'>
             <li><a href="#inicio1">Inicio</a></li>
             <li><a href="#historia1">Historia</a></li>
