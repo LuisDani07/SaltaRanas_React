@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    background: #050e2d;
+    background: rgb(60, 179, 113);
 }
 header{
     position:fixed;
@@ -21,7 +21,7 @@ header{
     z-index:1000;
 }
 #root .sticky{
-    background: #1b2141;
+    background: #82E973;
     box-shadow: 0 5px 10px   rgba(0,0,0,0.1);
 }
 /* scroll bar */
@@ -51,7 +51,7 @@ header ul li{
     margin:10px;
 }
 header ul li a{
-    color:#fff;
+    color:#0B5300;
     text-decoration: none;
     padding:10px 20px;
     border-radius: 5px;
@@ -89,7 +89,7 @@ header .action .searchBx input{
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-top: 75px;
+    margin-top: 60px;
 
 }
 .banner .bg{
@@ -174,7 +174,7 @@ align-items: center;
     box-shadow: 0 0 10px #1aeeef;
 }
 .about img{
-    height:500px;
+    height:400px;
     background: cover;
 
 }
@@ -184,7 +184,7 @@ align-items: center;
     min-height: 100vh;
     padding:0px 100px;
     display:flex;
-   
+   margin-top: 40px;
 }
 .historia p{
     text-align: justify;
@@ -274,12 +274,12 @@ footer .footer .info{
     justify-content: space-between;
     align-items: center;
 }
-footer .footer .info .logo{
-    position:relative;
-    color:#fff;
-    text-decoration: none;
-    font-size: 2em;
-    font-weight: 700;
+footer .footer .info a img{
+   border-radius: 20px;
+   height:100px;
+}
+footer .footer .info a img:hover{
+    border:10px solid #1aeeef;
 }
 footer .footer .info p{
     color: #dbd9d9;
