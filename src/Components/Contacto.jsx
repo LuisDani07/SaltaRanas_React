@@ -8,15 +8,15 @@ function Contacto() {
                   <h1>Contactanos</h1>
                   <div className="inputBx">
                        <p>Ingresa tu nombre</p>
-                       <input type="text" placeholder="Nombre completo"  />
+                       <input type="text" placeholder="Nombre completo"  required/>
                  </div>
                  <div className="inputBx">
                        <p>Ingresa tu correo</p>
-                       <input type="email" placeholder="Correo electronico" />
+                       <input type="email" placeholder="Correo electronico" required/>
                  </div>
                  <div className="inputBx">
                        <p>Mensaje</p>
-                       <textarea placeholder="Escribe aquí..." ></textarea>
+                       <textarea placeholder="Escribe aquí..." required></textarea>
                  </div>
                  <div className="inputBx">
                        <input type="submit"  name="Submit"/>

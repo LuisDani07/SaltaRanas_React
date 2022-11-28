@@ -19,6 +19,8 @@ header{
     align-items: center;
     transition:0.5s;
     z-index:1000;
+    font-weight: bold;
+    color:#050e2d
 }
 #root .sticky{
     background: #82E973;
@@ -106,12 +108,12 @@ align-items: center;
 }
 .banner .bg .content h2{
     font-size: 4em;
-    color:#fff;
+    color:#050e2d;
     letter-spacing: 1px;
 }
 .banner .bg .content p{
     font-size: 1em;
-    color:#dbd9d9;
+    color:#050e2d;
     letter-spacing: 1px;
 }
 .banner .bg .content a{
@@ -150,12 +152,12 @@ align-items: center;
 .about .contentBx h2{
     font-size: 3em;
     font-weight: 700;
-    color:#fff;
+    color:#050e2d;
 }
 .about .contentBx p{
     max-width: 600px;
     text-align: justify;
-    color:#dbd9d9
+    color:#050e2d;
 }
 .about .contentBx a{
     display:inline-block;
@@ -181,27 +183,30 @@ align-items: center;
 .historia{
     position:relative;
     width:100%;
-    min-height: 100vh;
+    min-height: 70vh;
     padding:0px 100px;
     display:flex;
    margin-top: 40px;
 }
 .historia p{
     text-align: justify;
-    color:#dbd9d9
+    color:#050e2d;
 }
 .historia h2{
     font-size: 3em;
     font-weight: 700;
-    color:#fff;
+    color:#050e2d;
 }
 .instrucciones{
+    margin-top: 0px;;
     position:relative;
     width:100%;
-    min-height: 50vh;
+    min-height: 75vh;
     padding:0px 100px;
     display:flex;
     justify-content: center;
+    align-items: center;
+    border:1px solid red;
 }
 /* contact */
 .contact{
@@ -329,6 +334,9 @@ header .logo img{
     height:50px;
     border-radius: 10px;
 }
+
+
+
 /* responsive */
 @media(max-width: 991px){
     header{
@@ -362,7 +370,7 @@ header .logo img{
          position:relative;
          width:30px;
          height:30px;
-         background:url('/vite.svg');
+         background:url('/Hamburger_svg.png');
          background-position: center;
          background-size: 30px;
          background-repeat:no-repeat;
@@ -370,7 +378,7 @@ header .logo img{
           z-index:1001;
     }
     .toggleMenu.active{
-        background:url('/lago.jpg');
+        background:url('/Hamburger_svg.png');
         background-position: center;
         background-size: 30px;
         background-repeat:no-repeat;
