@@ -213,12 +213,12 @@ align-items: center;
 }
 .instrucciones .content .slideshow{
     position:relative;
-
     box-sizing: border-box;
  }
 .mainImg{
         transition:all 500ms;
-
+        height:50vh;
+        width:100%;
  }
  .actions{
     position:absolute;
