@@ -5,10 +5,33 @@
     <link rel="icon" type="image/svg+xml" href="/logo.PNG" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="manifest" href="/manifest.json">
+     <!--Color app-->
+     <meta name="theme_color" content="#050e2d">
+
+     <!--Optimización dispositivos móviles-->
+     <meta name="MonbileOptimized" content="width">
+     <meta name="HandheldFriendly" content="true">
+ 
+     <!--Meta etiquetas para los dispositivos apple-->
+     <meta name="apple-mobile-web-app-capable" content="yes">
+     <meta name="apple-mobile-web-app-tatus-bar-style" content="black-translucent">
+     <link rel="apple-touch-icon" href="/logo.png">
+     <link rel="apple-touch-startup-image" href="/logo.png">
+ 
   <title>Saltaranas||TepicGames</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="./src/index.jsx"></script>
+    <script>
+      if('serviceWorker' in navigator){
+        window.addEventListener('load', ()=>{
+          navigator.serviceWorker.register('/serviceworker.js')
+          .then((reg)=>console.log('success: ', reg.scope))
+          .catch((err)=>console.log('failure', err));
+        })
+      }
+     </script>
   </body>
 </html>
