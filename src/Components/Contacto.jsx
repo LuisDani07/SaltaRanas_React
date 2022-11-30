@@ -5,7 +5,6 @@ function Contacto() {
       const [Data, setData] = useState('Vacio')
       console.log(Data)
 const findMyState=()=>{
-      //   const status=document.getElementById("map");
 
         const success=(position)=>{
                console.log(position)
@@ -16,7 +15,6 @@ const findMyState=()=>{
               .then(res=>res.json())
               .then(data=>{
                   setData(data)
-                  // status.textContent=`${data.locality }, ${data.principalSubdivision} latitud:${latitude} longitud:${longitude}`;
               })
         }
         const error=()=>{
