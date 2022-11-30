@@ -246,11 +246,22 @@ align-items: center;
     justify-content: center;
     align-items: center;
 }
-.contact img{
+.contact .map button{
+    padding:10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    margin: auto;;
+}
+.contact .map button:hover{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxfTEKJbZgAaNHAP5HDIoGAIoh0ge4KscNA&usqp=CAU');
+    background-position: center;
+    cursor: pointer;
+}
+.contact .map{
     height:100%;
     width:50%;
-    object-fit: cover;
-    border-radius: 10px;
+    background-color: green;
 }
 .contact .form{
     width:50%;

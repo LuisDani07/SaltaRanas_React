@@ -1,9 +1,28 @@
 
 function Contacto() {
+
+const findMyState=()=>{
+        const status=document.getElementById("map");
+
+        const success=(position)=>{
+               console.log(position)
+               const latitude=position.coords.latitude;
+               const longitude=position.coords.longitude;
+               console.log(latitude, longitude);
+        }
+        const error=()=>{
+            status.textContent="no se pudo encontrar tu localización"
+        }
+
+        navigator.geolocation.getCurrentPosition(success, error);
+}
+
   return (
     <footer id="contacto1" className="animeX">
-        <div className="contact ">
-           <img src="/lago.jpg" alt="" />
+        <div className="contact" id="map">
+            <div className="map">
+            <button onClick={findMyState}>Localización</button>
+            </div>
            <div className="form">
                   <h1>Contactanos</h1>
                   <div className="inputBx">
