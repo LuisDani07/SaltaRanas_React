@@ -1,14 +1,23 @@
+import { useState } from "react";
 
 function Contacto() {
 
+      const [Data, setData] = useState('Vacio')
+      console.log(Data)
 const findMyState=()=>{
-        const status=document.getElementById("map");
+      //   const status=document.getElementById("map");
 
         const success=(position)=>{
                console.log(position)
                const latitude=position.coords.latitude;
                const longitude=position.coords.longitude;
-               console.log(latitude, longitude);
+              const geoApiUrl=`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=es`;
+              fetch(geoApiUrl)
+              .then(res=>res.json())
+              .then(data=>{
+                  setData(data)
+                  // status.textContent=`${data.locality }, ${data.principalSubdivision} latitud:${latitude} longitud:${longitude}`;
+              })
         }
         const error=()=>{
             status.textContent="no se pudo encontrar tu localización"
@@ -21,7 +30,13 @@ const findMyState=()=>{
     <footer id="contacto1" className="animeX">
         <div className="contact" id="map">
             <div className="map">
-            <button onClick={findMyState}>Localización</button>
+            {
+                  Data === 'Vacio' && <button onClick={findMyState}>Localización</button>
+            }
+
+            {
+                Data !== 'Vacio' && <h2>{ Data?.locality }, { Data.principalSubdivision }</h2>
+            }
             </div>
            <div className="form">
                   <h1>Contactanos</h1>
