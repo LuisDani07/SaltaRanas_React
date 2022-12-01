@@ -6,10 +6,15 @@ import About from './Components/About';
 import Historia from './Components/Historia'
 import Instrucciones from './Components/Intrucciones';
 import Contacto from './Components/Contacto'
+import firebase from 'firebase/compat/app';
 
 function App() {
+  const firebaseApp=firebase.apps[0];
   return (
         <>
+        {
+          JSON.stringify(firebaseApp)
+        }
           <NavBar/>
           <Banner/>
           <Historia/>
