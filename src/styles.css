@@ -276,6 +276,7 @@ margin:10px 0;
 .contact .form .inputBx p{
     color:#fff;
 }
+.contact .form .inputBx button,
 .contact .form .inputBx input,
 .contact .form .inputBx textarea{
     border:none;
@@ -290,7 +291,7 @@ margin:10px 0;
 .contact .form .inputBx textarea{
     height:150px;
 }
-.contact .form .inputBx input[type="submit"]{
+.contact .form .inputBx [type="submit"]{
     display:inline-block;
     padding:10px 20px;
   margin:15px 0;
@@ -305,6 +306,13 @@ margin:10px 0;
   letter-spacing: 1px;
 }
 .contact .form .inputBx input[type="submit"]:hover{
+    background: #1aeeef;
+    border: none;
+    color:#050e2d;
+    box-shadow: 0 0 10px #1aeeef;
+    cursor:pointer;
+}
+.contact .form .inputBx button:hover{
     background: #1aeeef;
     border: none;
     color:#050e2d;

@@ -1,13 +1,40 @@
-import { useState } from "react";
+import { async } from "@firebase/util";
+import { collection, onSnapshot, addDoc, doc, setDoc } from "firebase/firestore";
+import { useState,useEffect } from "react";
+import db from './firebase';
+
 
 function Contacto() {
+      const [comments,setComments]=useState([]);
+      const [name,setName]=useState("");
+      const [email,setEmail]=useState("");
+      const [message,setMessage]=useState("");
+
+      const handleNew=async()=>{
+            const collectionRef=collection(db, "comments");
+            const payload={name:name, email:email, message:message};
+          await addDoc(collectionRef, payload);
+          setName("");
+          setEmail("");
+          setMessage("");
+      }
+
+
+      //firebase
+           useEffect(()=>{
+            const unsub=onSnapshot(collection(db, "comments"),(snapshot)=>{
+                  setComments(snapshot.docs.map(doc=>({...doc.data(),id:doc.id})))
+            });
+            return unsub;
+           },[])
+
+
 
       const [Data, setData] = useState('Vacio')
-      console.log(Data)
+
 const findMyState=()=>{
 
         const success=(position)=>{
-               console.log(position)
                const latitude=position.coords.latitude;
                const longitude=position.coords.longitude;
               const geoApiUrl=`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=es`;
@@ -40,20 +67,28 @@ const findMyState=()=>{
                   <h1>Contactanos</h1>
                   <div className="inputBx">
                        <p>Ingresa tu nombre</p>
-                       <input type="text" placeholder="Nombre completo"  required/>
+                       <input type="text" placeholder="Nombre completo" value={name} onChange={(e)=>{setName(e.target.value)}}  required/>
                  </div>
                  <div className="inputBx">
                        <p>Ingresa tu correo</p>
-                       <input type="email" placeholder="Correo electronico" required/>
+                       <input type="email" placeholder="Correo electronico" value={email} onChange={(e)=>{setEmail(e.target.value)}} required/>
                  </div>
                  <div className="inputBx">
                        <p>Mensaje</p>
-                       <textarea placeholder="Escribe aquí..." required></textarea>
+                       <textarea placeholder="Escribe aquí..." value={message} onChange={(e)=>{setMessage(e.target.value)}} required></textarea>
                  </div>
                  <div className="inputBx">
-                       <input type="submit"  name="Submit"/>
+                       <button onClick={handleNew}>Enviar</button>
                  </div>
+                 <ul>
+                     {comments.map((comment)=>(
+                             (
+                              <li key={comment.id}>{comment.email}</li>
+                             )
+                     ))}
+                 </ul>
            </div>
+
       </div>
       <div className="footer">
             <div className="info">
